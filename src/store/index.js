@@ -9,22 +9,22 @@ const counterReducer = (state = initialState, action) => {
   switch (action.type) {
     case 'INCREMENT':
       return {
+        ...state,
         counter: state.counter + 1,
-        showCounter: state.showCounter,
       };
     case 'INCREASE':
       return {
+        ...state,
         counter: state.counter + action.payload,
-        showCounter: state.showCounter,
       };
     case 'DECREMENT':
       return {
+        ...state,
         counter: state.counter - 1,
-        showCounter: state.showCounter,
       };
     case 'TOGGLE_COUNTER':
       return {
-        counter: state.counter,
+        ...state,
         showCounter: !state.showCounter,
       };
     default:
