@@ -1,5 +1,10 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { decrement, increase, increment, toggleCounter } from '../store';
+import {
+  decrement,
+  increase,
+  increment,
+  toggleCounter,
+} from '../store/counter';
 import classes from './Counter.module.css';
 
 const Counter = () => {
